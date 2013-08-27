@@ -1,0 +1,4 @@
+Deny from all
+RewriteEngine on 
+RewriteCond $1 !^(index\.php|images|js|img|css|robots\.txt) #在这里写要排除的资源等
+RewriteRule ^(.*)$ index.php/$1 [L]
